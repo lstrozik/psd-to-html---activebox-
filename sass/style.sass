@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+$main-font: Raleway
+$whiteish: #ffffff
+$reddish: #e84545
+
+body
+    max-width: 1900px
+
+.container
+    max-width: 1400px
+
+.jumbotron
+    max-height: 100%
+    width: 100%
+    background: url("../img/banner.jpg") 0/cover no-repeat
+    .row
+        border-bottom: 1px solid $whiteish
+        height: 60px
+        .logo
+            margin-top: 10px
+            float: left
+        .menu
+            margin-top: 10px
+            ul
+                float: right
+                padding: 0px
+                li
+                    width: 95px
+                    height: 11px
+                    opacity: 0.75
+                    font-family: Raleway
+                    font-size: 13px
+                    font-weight: 700
+                    margin: 0 15px
+                    text-transform: uppercase
+                    display: inline
+                    list-style-type: none
+                    a
+                        text-decoration: none
+                        color: #ffffff
+                        transition: 0.3s
+                        &:hover
+                            color: $reddish
+                            transition: 0.3s
+
+    .favourite
+        height: 600px
+        max-width: 1000px
+        margin: 200px auto 0
+        text-align: center
+        .template
+            font-size: 65px
+            color: #ffffff
+            text-transform: uppercase
+            text-align: center
+            font-family: $main-font
+            font-weight: bold
+            line-height: 71px
+        .subtext
+            color: #ffffff
+            font-family: $main-font
+            font-size: 22px
+            font-weight: 400
+            line-height: 33px
+            text-align: center
+        .find-more
+            width: 200px
+            height: 46px
+            margin: 0 auto
+            text-align: center
+            border-radius: 2px
+            background-color: $reddish
+            margin: 100px auto
+            border: none
+            text-transform: uppercase
+            color: #ffffff
+            outline: none
+            transition: 0.3s
+            &:hover
+                box-shadow: 0px 0px 5px #ffffff
+                transition: 0.3s
+
+
+// icons section
+
+.icons
+    text-align: center
+    h4
+        text-transform: uppercase
+        margin-top: 30px
+    p
+        margin-top: 20px
+        text-align: center
+        color: #6c7279
+        font-family: $main-font
+        font-size: 14px
+        font-weight: 400
+        line-height: 21px
+
+
+.gallery
+    margin-top: 50px
+    .col-3
+        padding: 1px
+        margin-top: 0px
+        .layer
+            height: 355px
+            width: 100%
+            transition: 0.3s
+            &:hover
+                background-color: rgba(232, 69, 69, 0.6)
+                transition: 0.5s
+                cursor: pointer
+            &:hover h5
+                transform:  scale(1.2)
+                visibility: visible
+                transition: 0.5s
+            &:hover p
+                visibility: visible
+                transform: scale(1.2)
+                transition: 0.5s
+            h5
+                margin: 0 auto
+                max-width: 200px
+                position: relative
+                text-align: center
+                color: $whiteish
+                font-family: $main-font
+                visibility: hidden
+                top: 40%
+                font-weight: bold
+                font-size: 18px
+                opacity: 1
+            p
+                @extend h5
+                font-weight: normal
+                margin: 20px auto
+                top: 40%
+    .woodworks
+        height: 355px
+        width: 100%
+        background-image: url("../img/woodworks.png")
+        background-size: cover
+    .notepad
+        @extend .woodworks
+        background-image: url("../img/notepad.png")
+    .camera
+        @extend .woodworks
+        background-image: url("../img/glasses.jpeg")
+    .spices
+        @extend .woodworks
+        background-image: url("../img/spices.png")
+    .strings
+        @extend .woodworks
+        background-image: url("../img/strings.png")
+    .tools
+        @extend .woodworks
+        background-image: url("../img/tools.png")
+    .letters
+        @extend .woodworks
+        background-image: url("../img/letters.png")
+    .food
+        @extend .woodworks
+        background-image: url("../img/food.png")
+
+// section staff
+
+.people
+    margin-top: 50px
+    h5
+        color: $reddish
+    p
+        margin: 20px 0
+        max-width: 330px
+    img
+        border-radius: 5px
+        max-width: 100%
+    a
+        text-decoration: none
+        margin-right: 10px
+        i
+            font-size: 28px
+            color: grey
+            transition: 0.2s
+            text-align: center
+            padding: 10px
+            height: 45px
+            width: 45px
+            margin-right: 5px
+            margin-top: 10px
+            border: 1px solid grey
+            transition: 0.5s
+            &:hover
+                color: white
+                transition: 0.2s
+                background-color: grey
+
+// Bootstrap carousel
+
+.slider
+    margin-top: 100px
+    min-height: 500px
+    .lady
+        height: 500px
+        width: 50%
+        float: left
+        padding: 0px
+        img
+            height: 500px
+            width: 100%
+
+    .carousel
+        @extend .lady
+        img
+            height: 500px
+
+// download
+
+.download
+    height: 350px
+    text-align: center
+    h1
+        margin-top: 90px
+        color: #2d3033
+        font-family: $main-font
+        font-size: 28px
+        font-weight: 300
+    p
+        color: #2d3033
+        font-family: $main-font
+        font-size: 13px
+        font-weight: 700
+        line-height: 21px
+        text-transform: uppercase
+    button
+        width: 280px
+        height: 46px
+        border-radius: 2px
+        background-color: #e84545
+        border: none
+        color: $whiteish
+        margin-top: 10px
+        transition: 0.3s
+        &:hover
+            box-shadow: 0px 0px 7px black
+            transition: 0.3s
+
+
+// last section
+
+.last
+    min-height: 200px
+    background-color: #3a3e64
+    text-align: center
+    color: $whiteish
+    font-family: $main-font
+
+    h3
+        font-size: 14px
+        text-transform: uppercase
+        font-weight: 700
+    p
+        font-weight: 400
+        opacity: 0.5
+    i
+        width: 45px
+        height: 45px
+        color: $whiteish
+        padding: 10px
+        font-size: 24px
+        border: 1px solid $whiteish
+        margin: 5px
+        transition: 0.3s
+        &:hover
+            color: #3a3e64
+            background-color: $whiteish
+            border: none
+            transition: 0.3s
+    .about
+        padding-bottom: 20px
+
+// footer
+
+footer
+    height: 80px
+    text-align: center
+    background-color: #313454
+    color: #9799A9
+    font-family: $main-font
+    p
+        margin: 0
+        padding-top: 10px
+        .fa-heart
+            color: $reddish
+        .white
+            color: white
+
+
+// media queries
+
+@media (min-width: 769px) and (max-width: 1000px)
+    .jumbotron
+        .logo
+            text-align: center
+        .menu
+            height: 50px
+            ul
+                width: 100%
+                float: none
+                text-align: center
+                margin-top: 40px
+        .favourite
+            .template
+                font-size: 48px
+            .subtext
+                font-size: 24px
+
+
+@media (max-width: 768px)
+    .jumbotron
+        .row
+            .logo
+                text-align: center
+            .menu
+                ul
+                    width: 100%
+                    margin-top: 40px
+                    .menu-item
+                        height: 40px
+                        display: block
+                        width: 100%
+                        text-align: center
+                        margin: 0
+        .favourite
+            height: 500px
+            max-width: 800px
+            margin: 250px auto 0
+            text-align: center
+            .template
+                font-size: 24px
+            .subtext
+                margin: 0 auto
+                max-width: 300px
+                font-size: 18px
+    .people
+        .col-3
+            text-align: center
+            p
+                margin: 0 auto
+
+    .download
+        h1
+            margin-top: 130px
+            font-size: 20px
+        p
+            font-size: 10px
+        button
+            width: 200px
+
+    .slider
+        .lady
+            width: 100%
+            margin-bottom: -50px
+@media (min-width: 768px) and (max-width: 1000px)
+    .people
+        .col-3
+            text-align: center
+            p
+                margin: 0 auto
+
+    .slider
+        .lady
+            width: 100%
+            margin-bottom: -50px
+
+    .download
+        margin-top: 50px
+        h1
+            font-size: 20px
+        p
+            font-size: 10px
