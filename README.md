@@ -2,4 +2,4 @@
 
 Html/Sass/RWD/Bootstrap
 
- https://lstrozik.github.io/PSD-to-HTML---activebox-layout/
+ https://lstrozik.github.io/psd-to-html---activebox-/
